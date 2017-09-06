@@ -1,0 +1,14 @@
+#plateau {
+  height : 500px;
+  width : 1000px;
+  background : #6ec9e5;
+  position : relative;
+}
+
+#mario {
+  height : 65px;
+  width : 32px;
+  background-image : url(img/marios.png);
+  position : absolute ;
+  bottom :  0;
+}
