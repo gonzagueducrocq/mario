@@ -12,3 +12,8 @@
   position : absolute ;
   bottom :  0;
 }
+
+
+#mario.p1 {
+    background-position-x: 32px;
+}
