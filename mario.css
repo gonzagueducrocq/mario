@@ -1,30 +1,103 @@
 #plateau {
-  height : 500px;
-  width : 1000px;
-  background : #6ec9e5;
+  height : 450px;
+  width : 900px;
+  background-color : #00b4ff;
   position : relative;
+
+  background-image : url(img/nuages_mario.png);
+  overflow : hidden;
+
+}
+
+#solMario {
+  height : 40px;
+  width : 900px;
+  background-image : url(img/solMario.png);
+    position : absolute ;
+    bottom :  0;
+}
+
+#plateformeMario {
+  height : 40px;
+  width : 200px;
+  background-image : url(img/plateformeMario.png);
+  position : absolute ;
+  bottom :  120px;
+  left : 450px;
+}
+
+#pointInterrogation {
+  height : 40px;
+  width : 40px;
+  background-image : url(img/pointInterrogation.png);
+  position : absolute ;
+  bottom :  120px;
+  left : 490px;
+
+}
+
+#pointIntUtilise {
+  height : 40px;
+  width : 40px;
+  background-image : url(img/pointIntUtilise.png);
+  position : absolute ;
+  bottom :  120px;
+  left : 490px;
+
+}
+
+#trouMario {
+  height : 40px;
+  width : 50px;
+  background-image : url(img/trouMario.png);
+  background-color : #00b4ff;
+  position : absolute ;
+  bottom :  0;
+  left : 200px;
 }
 
 #mario {
   height : 65px;
   width : 32px;
   background-image : url(img/marios.png);
+  background-position-y : -64px;
   position : absolute ;
-  bottom :  0;
+  bottom :  40px;
 }
 
-
 #mario.p1 {
-    background-position-x: 32px;
+    background-position-x: -32px;
 }
 
 #mario.p2 {
-  background-position-x: 64px;
+  background-position-x: -64px;
 }
 #mario.p3 {
-  background-position-x: 96px;
+  background-position-x: -96px;
 }
 
 #mario.reverse {
   transform : rotate(180deg) scaleY(-1);
+}
+
+#mario.up {
+  bottom : 175px;
+  transition : all 0.25s ease;
+}
+
+#mario.dead {
+  background-position-x: -192px;
+  background-position-y: -64px;
+  bottom : -40px;
+  transition : bottom 0.750s ease;
+}
+
+#gameOver {
+  height : 60px;
+  width : 170px;
+  display : none;
+  background-image: url(img/gameOver.png);
+    position : absolute ;
+  bottom : 200px;
+  left : 340px;
 }

@@ -20,7 +20,7 @@ var classSens = "";
     else if (e.keyCode == 37) {
       classSens = "reverse";
       position = position - 10;
-      currentPosition = currentPosition +1;
+      currentPosition = currentPosition + 1;
 
       if (currentPosition > 3) {
         currentPosition = 1;
@@ -41,13 +41,22 @@ var classSens = "";
 $("#mario").css('left', position +"px");
 $("#mario").attr('class', classSens + " " +tabPosition[currentPosition]);
 
+if (e.keyCode == 38 ) {
+  $("#mario").addClass("up");
+setTimeout(function()
+      { $("#mario").removeClass("up"); }, 250);
+}
 
-//var position = $("#mario").position().top;
-//  if (e.keyCode == 38) {
-//    position = position + 50
-//  }
-//  $("#mario").css('top', position +"px");
+if (position >= 200 && position <= 228) {
+  $("#mario").addClass("dead");
+  $("#gameOver").css('display', "block");
+  }
 
-    console.log(e.keyCode);
+if (position = 490) {
+    if ( $("#mario").addClass("up")) {
+          $("#pointIntUtilise").css('display', "block");
+    }
+}
+
  }) ;
 });
