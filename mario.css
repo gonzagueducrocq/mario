@@ -39,6 +39,7 @@
 #pointIntUtilise {
   height : 40px;
   width : 40px;
+    display : none;
   background-image : url(img/pointIntUtilise.png);
   position : absolute ;
   bottom :  120px;

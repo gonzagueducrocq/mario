@@ -45,18 +45,15 @@ if (e.keyCode == 38 ) {
   $("#mario").addClass("up");
 setTimeout(function()
       { $("#mario").removeClass("up"); }, 250);
+      if (position >= 490 && position <= 510) {
+          $("#pointIntUtilise").css('display', "block");
+      }
 }
 
 if (position >= 200 && position <= 228) {
   $("#mario").addClass("dead");
   $("#gameOver").css('display', "block");
   }
-
-if (position = 490) {
-    if ( $("#mario").addClass("up")) {
-          $("#pointIntUtilise").css('display', "block");
-    }
-}
 
  }) ;
 });
