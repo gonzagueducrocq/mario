@@ -17,3 +17,14 @@
 #mario.p1 {
     background-position-x: 32px;
 }
+
+#mario.p2 {
+  background-position-x: 64px;
+}
+#mario.p3 {
+  background-position-x: 96px;
+}
+
+#mario.reverse {
+  transform : rotate(180deg) scaleY(-1);
+}
